@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AdaptFit — One Bag. Any Gear. Any Shape.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+
+<nav>
+  <div class="logo">Adapt<span>Fit</span></div>
+  <a href="#waitlist" class="nav-cta">Join waitlist</a>
+</nav>
+
+<section class="hero">
+  <canvas id="pinCanvas"></canvas>
+  <div class="hero-content">
+    <span class="eyebrow">Pin-impression carry system</span>
+    <h1>One bag.<br>Any gear.<br><em>Any shape.</em></h1>
+    <p class="hero-sub">AdaptFit is the first carrying bag that conforms to whatever you drop inside it — no foam cutouts, no brand-specific fit, no rattling gear.</p>
+    <div class="hero-actions">
+      <a href="#waitlist" class="btn-primary">Get early access</a>
+      <a href="#mechanism" class="btn-ghost">See how it works</a>
+    </div>
+  </div>
+  <div class="scroll-hint">MOVE YOUR CURSOR</div>
+</section>
+
+<section class="problem">
+  <div class="section-inner">
+    <span class="tag">The problem</span>
+    <h2>Every bag on the market is built for one device. Yours won't stay that device forever.</h2>
+    <p class="lede">A bag bought for one gimbal doesn't fit the next one. Foam cutouts go obsolete the day you upgrade — and generic bags leave everything rattling loose.</p>
+  </div>
+  <div class="problem-grid">
+    <div class="problem-card">
+      <span class="num">01</span>
+      <strong>Brand-specific foam</strong>
+      <p>Cut to one model's exact dimensions. Switch gimbals or camera bodies and the bag is dead weight.</p>
+    </div>
+    <div class="problem-card">
+      <span class="num">02</span>
+      <strong>Fixed compartments</strong>
+      <p>Only things smaller than the slot fit — and even then, nothing is actually held in place.</p>
+    </div>
+    <div class="problem-card">
+      <span class="num">03</span>
+      <strong>Oversized generic bags</strong>
+      <p>Room for anything, grip for nothing. Gear shifts and collides in transit.</p>
+    </div>
+    <div class="problem-card">
+      <span class="num">04</span>
+      <strong>One bag per device</strong>
+      <p>Three gimbal brands means three separate bags — and three separate costs.</p>
+    </div>
+  </div>
+</section>
+
+<section id="mechanism">
+  <div class="section-inner">
+    <span class="tag">The mechanism</span>
+    <h2>Three systems, working together, so the bag adapts and you don't have to.</h2>
+    <p class="lede">Inspired by the classic pin-impression board — reapplied, for the first time, as a functional carrying system.</p>
+    <div class="mech-grid">
+      <div class="mech-card" data-mark="01">
+        <h3>Bilateral pin walls</h3>
+        <p>Two opposing panels of independently sliding pins press in from left and right, capturing your gear's exact profile the moment it's lowered in.</p>
+        <div class="spec">ABS/Nylon rods · silicone base sheet · soft tip caps</div>
+      </div>
+      <div class="mech-card" data-mark="02">
+        <h3>Weight-decoupled base</h3>
+        <p>A semi-flexible fiber plate carries the full weight of your gear on its own — so the pins only ever have to grip, never bear gravity.</p>
+        <div class="spec">Fiberglass composite · EVA-lined top surface</div>
+      </div>
+      <div class="mech-card" data-mark="03">
+        <h3>Single-pull reset</h3>
+        <p>One exterior pull returns every pin to flat neutral — no unzipping, no reaching inside, no manual reset.</p>
+        <div class="spec">4-string rig · exterior D-ring · ~2–3 sec reset</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="apps">
+  <div class="section-inner">
+    <span class="tag">Built for what you actually carry</span>
+    <h2>If it has an odd shape, AdaptFit already fits it.</h2>
+    <div class="chip-row">
+      <span class="chip">Gimbals</span>
+      <span class="chip">Drones</span>
+      <span class="chip">Action cameras</span>
+      <span class="chip">Laptops &amp; tablets</span>
+      <span class="chip">Microphones</span>
+      <span class="chip">Audio interfaces</span>
+      <span class="chip">Lenses</span>
+      <span class="chip">Sports &amp; medical gear</span>
+    </div>
+  </div>
+</section>
+
+<section class="waitlist" id="waitlist">
+  <div class="section-inner">
+    <span class="tag">Early access</span>
+    <h2>Be first in line when AdaptFit ships.</h2>
+    <p class="lede">No spam — just a heads-up when pre-orders open, and a shot at founding-member pricing.</p>
+    <form id="waitlistForm">
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+      </div>
+      <div class="field">
+        <label for="gear">What will you carry in it? (optional)</label>
+        <select id="gear" name="gear">
+          <option value="">Select one</option>
+          <option value="gimbal">Gimbal</option>
+          <option value="drone">Drone</option>
+          <option value="camera">Camera / lenses</option>
+          <option value="laptop">Laptop / tablet</option>
+          <option value="audio">Microphones / audio gear</option>
+          <option value="other">Something else</option>
+        </select>
+      </div>
+      <input type="text" name="company" class="honey" tabindex="-1" autocomplete="off">
+      <div class="submit-row">
+        <button type="submit" class="btn-primary" id="waitlistBtn">Join the waitlist</button>
+      </div>
+      <div id="formMsg"></div>
+    </form>
+    <p class="privacy-note">Your email is only used to notify you about AdaptFit. Unsubscribe anytime.</p>
+  </div>
+</section>
+
+<footer>
+  <div>AdaptFit — Universal Adaptive Carrying Bag</div>
+  <div>&copy; 2026</div>
+</footer>
+
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>
